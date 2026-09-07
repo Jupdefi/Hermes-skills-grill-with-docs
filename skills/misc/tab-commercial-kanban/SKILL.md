@@ -84,7 +84,8 @@ Completion criterion: the card leaves behind something Justin can send, review, 
 Use these routes:
 
 - **Internal research, hygiene or draft:** complete when verified.
-- **Client-facing/public artifact awaiting sign-off:** request review and name Justin or Spark in the summary.
+- **Client-facing/public artifact awaiting sign-off:** request review and name Justin or Spark in the summary. Review state is not approval.
+- **Spark review across Core1/Core4:** the `tab-commercial` board is local to Core4 and does not notify Spark automatically. Send a short A2A review brief when that route is available; otherwise write an open shared-vault handoff and ask Justin to relay it. Do not claim Spark has read or approved anything until the response is captured as a card comment.
 - **Send, publish, schedule, spend or client-account mutation without exact approval:** call `kanban_block(kind="needs_input", ...)` and identify the exact action requiring approval.
 - **Dependency unfinished:** call `kanban_block(kind="dependency", ...)` or create/link the parent card.
 - **Missing capability or transient system fault:** block with the matching kind and include evidence.
